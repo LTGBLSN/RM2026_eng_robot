@@ -1336,6 +1336,30 @@ code_mf/Src/CAN_SENT_TASK.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\dm_h723_lib.elf.dir\build.make CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/CAN_SENT_TASK.c.s
 .PHONY : code_mf/Src/CAN_SENT_TASK.c.s
 
+code_mf/Src/CHASSIS_TASK.obj: code_mf/Src/CHASSIS_TASK.c.obj
+.PHONY : code_mf/Src/CHASSIS_TASK.obj
+
+# target to build an object file
+code_mf/Src/CHASSIS_TASK.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dm_h723_lib.elf.dir\build.make CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/CHASSIS_TASK.c.obj
+.PHONY : code_mf/Src/CHASSIS_TASK.c.obj
+
+code_mf/Src/CHASSIS_TASK.i: code_mf/Src/CHASSIS_TASK.c.i
+.PHONY : code_mf/Src/CHASSIS_TASK.i
+
+# target to preprocess a source file
+code_mf/Src/CHASSIS_TASK.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dm_h723_lib.elf.dir\build.make CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/CHASSIS_TASK.c.i
+.PHONY : code_mf/Src/CHASSIS_TASK.c.i
+
+code_mf/Src/CHASSIS_TASK.s: code_mf/Src/CHASSIS_TASK.c.s
+.PHONY : code_mf/Src/CHASSIS_TASK.s
+
+# target to generate assembly for a file
+code_mf/Src/CHASSIS_TASK.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dm_h723_lib.elf.dir\build.make CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/CHASSIS_TASK.c.s
+.PHONY : code_mf/Src/CHASSIS_TASK.c.s
+
 code_mf/Src/DEBUG_UART_TASK.obj: code_mf/Src/DEBUG_UART_TASK.c.obj
 .PHONY : code_mf/Src/DEBUG_UART_TASK.obj
 
@@ -1383,6 +1407,30 @@ code_mf/Src/DJI_motors.s: code_mf/Src/DJI_motors.c.s
 code_mf/Src/DJI_motors.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\dm_h723_lib.elf.dir\build.make CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/DJI_motors.c.s
 .PHONY : code_mf/Src/DJI_motors.c.s
+
+code_mf/Src/ERROR_DETECTION.obj: code_mf/Src/ERROR_DETECTION.c.obj
+.PHONY : code_mf/Src/ERROR_DETECTION.obj
+
+# target to build an object file
+code_mf/Src/ERROR_DETECTION.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dm_h723_lib.elf.dir\build.make CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/ERROR_DETECTION.c.obj
+.PHONY : code_mf/Src/ERROR_DETECTION.c.obj
+
+code_mf/Src/ERROR_DETECTION.i: code_mf/Src/ERROR_DETECTION.c.i
+.PHONY : code_mf/Src/ERROR_DETECTION.i
+
+# target to preprocess a source file
+code_mf/Src/ERROR_DETECTION.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dm_h723_lib.elf.dir\build.make CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/ERROR_DETECTION.c.i
+.PHONY : code_mf/Src/ERROR_DETECTION.c.i
+
+code_mf/Src/ERROR_DETECTION.s: code_mf/Src/ERROR_DETECTION.c.s
+.PHONY : code_mf/Src/ERROR_DETECTION.s
+
+# target to generate assembly for a file
+code_mf/Src/ERROR_DETECTION.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dm_h723_lib.elf.dir\build.make CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/ERROR_DETECTION.c.s
+.PHONY : code_mf/Src/ERROR_DETECTION.c.s
 
 code_mf/Src/GET_RC_TASK.obj: code_mf/Src/GET_RC_TASK.c.obj
 .PHONY : code_mf/Src/GET_RC_TASK.obj
@@ -1479,30 +1527,6 @@ code_mf/Src/MahonyAHRS.s: code_mf/Src/MahonyAHRS.c.s
 code_mf/Src/MahonyAHRS.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\dm_h723_lib.elf.dir\build.make CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/MahonyAHRS.c.s
 .PHONY : code_mf/Src/MahonyAHRS.c.s
-
-code_mf/Src/SHOOT_TASK.obj: code_mf/Src/SHOOT_TASK.c.obj
-.PHONY : code_mf/Src/SHOOT_TASK.obj
-
-# target to build an object file
-code_mf/Src/SHOOT_TASK.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\dm_h723_lib.elf.dir\build.make CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/SHOOT_TASK.c.obj
-.PHONY : code_mf/Src/SHOOT_TASK.c.obj
-
-code_mf/Src/SHOOT_TASK.i: code_mf/Src/SHOOT_TASK.c.i
-.PHONY : code_mf/Src/SHOOT_TASK.i
-
-# target to preprocess a source file
-code_mf/Src/SHOOT_TASK.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\dm_h723_lib.elf.dir\build.make CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/SHOOT_TASK.c.i
-.PHONY : code_mf/Src/SHOOT_TASK.c.i
-
-code_mf/Src/SHOOT_TASK.s: code_mf/Src/SHOOT_TASK.c.s
-.PHONY : code_mf/Src/SHOOT_TASK.s
-
-# target to generate assembly for a file
-code_mf/Src/SHOOT_TASK.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\dm_h723_lib.elf.dir\build.make CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/SHOOT_TASK.c.s
-.PHONY : code_mf/Src/SHOOT_TASK.c.s
 
 code_mf/Src/bsp_can.obj: code_mf/Src/bsp_can.c.obj
 .PHONY : code_mf/Src/bsp_can.obj
@@ -1832,12 +1856,18 @@ help:
 	@echo ... code_mf/Src/CAN_SENT_TASK.obj
 	@echo ... code_mf/Src/CAN_SENT_TASK.i
 	@echo ... code_mf/Src/CAN_SENT_TASK.s
+	@echo ... code_mf/Src/CHASSIS_TASK.obj
+	@echo ... code_mf/Src/CHASSIS_TASK.i
+	@echo ... code_mf/Src/CHASSIS_TASK.s
 	@echo ... code_mf/Src/DEBUG_UART_TASK.obj
 	@echo ... code_mf/Src/DEBUG_UART_TASK.i
 	@echo ... code_mf/Src/DEBUG_UART_TASK.s
 	@echo ... code_mf/Src/DJI_motors.obj
 	@echo ... code_mf/Src/DJI_motors.i
 	@echo ... code_mf/Src/DJI_motors.s
+	@echo ... code_mf/Src/ERROR_DETECTION.obj
+	@echo ... code_mf/Src/ERROR_DETECTION.i
+	@echo ... code_mf/Src/ERROR_DETECTION.s
 	@echo ... code_mf/Src/GET_RC_TASK.obj
 	@echo ... code_mf/Src/GET_RC_TASK.i
 	@echo ... code_mf/Src/GET_RC_TASK.s
@@ -1850,9 +1880,6 @@ help:
 	@echo ... code_mf/Src/MahonyAHRS.obj
 	@echo ... code_mf/Src/MahonyAHRS.i
 	@echo ... code_mf/Src/MahonyAHRS.s
-	@echo ... code_mf/Src/SHOOT_TASK.obj
-	@echo ... code_mf/Src/SHOOT_TASK.i
-	@echo ... code_mf/Src/SHOOT_TASK.s
 	@echo ... code_mf/Src/bsp_can.obj
 	@echo ... code_mf/Src/bsp_can.i
 	@echo ... code_mf/Src/bsp_can.s

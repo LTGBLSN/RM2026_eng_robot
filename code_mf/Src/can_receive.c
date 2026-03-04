@@ -56,9 +56,30 @@ void HAL_FDCAN_RxFifo0Callback(FDCAN_HandleTypeDef *hfdcan, uint32_t RxFifo0ITs)
                     break;
                 }
 
+
                 case 0x11:
                 {
                     DM_motors_parse(&DM4340_01, rx_data);
+                    DM4340_01.last_online_time = HAL_GetTick() ;
+                    break;
+                }
+                case 0x12:
+                {
+                    DM_motors_parse(&DM4340_02, rx_data);
+                    DM4340_02.last_online_time = HAL_GetTick() ;
+                    break;
+                }
+                case 0x13:
+                {
+                    DM_motors_parse(&DM4340_03, rx_data);
+                    DM4340_03.last_online_time = HAL_GetTick() ;
+                    break;
+                }
+                case 0x14:
+                {
+                    DM_motors_parse(&DM4340_04, rx_data);
+                    DM4340_04.last_online_time = HAL_GetTick() ;
+                    break;
                 }
                 default:
                     break;
@@ -99,7 +120,7 @@ void HAL_FDCAN_RxFifo0Callback(FDCAN_HandleTypeDef *hfdcan, uint32_t RxFifo0ITs)
                 case 0x207:
                 {
                     uint8_t i = rx_header.Identifier - 0x201;
-                    get_motor_measure(&motor_can2_data[i], rx_data);
+                    get_motor_measure(&motor_can3_data[i], rx_data);
                     break;
                 }
                 default:

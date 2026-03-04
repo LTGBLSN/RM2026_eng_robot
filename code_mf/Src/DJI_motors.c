@@ -12,6 +12,7 @@
 
 motor_measure_t motor_can1_data[7];
 motor_measure_t motor_can2_data[7];
+motor_measure_t motor_can3_data[7];
 
 
 

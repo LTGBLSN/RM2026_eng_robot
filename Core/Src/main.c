@@ -34,7 +34,6 @@
 #include "BMI088driver.h"
 #include "bsp_can.h"
 #include "dm_motor.h"
-#include "SHOOT_TASK.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -60,9 +59,29 @@ float INS_quat[4] = {1.0f, 0.0f, 0.0f, 0.0f};
 float INS_angle[3] = {0.0f, 0.0f, 0.0f};
 float INS_degree[3] = {0.0f, 0.0f, 0.0f};
 
-//shoot
-float SHOOT_2006_ID1_GIVEN_SPEED ;
-int16_t SHOOT_2006_ID1_GIVEN_CURRENT ;
+
+int16_t CHASSIS_3508_ID1_GIVEN_CURRENT = 0;
+int16_t CHASSIS_3508_ID2_GIVEN_CURRENT = 0;
+int16_t CHASSIS_3508_ID3_GIVEN_CURRENT = 0;
+int16_t CHASSIS_3508_ID4_GIVEN_CURRENT = 0;
+int16_t CHASSIS_3508_ID5_GIVEN_CURRENT = 0;
+int16_t CHASSIS_3508_ID6_GIVEN_CURRENT = 0;
+
+
+
+float CHASSIS_3508_ID1_GIVEN_SPEED = 0;
+float CHASSIS_3508_ID2_GIVEN_SPEED = 0;
+float CHASSIS_3508_ID3_GIVEN_SPEED = 0;
+float CHASSIS_3508_ID4_GIVEN_SPEED = 0;
+float CHASSIS_3508_ID5_GIVEN_SPEED = 0;
+float CHASSIS_3508_ID6_GIVEN_SPEED = 0;
+
+float chassis_wheel_vx = 0.0f;
+float chassis_wheel_vy = 0.0f;
+float chassis_wheel_vround = 0.0f;
+float chassis_track_vx = 0.0f;
+float chassis_track_vround = 0.0f;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -133,12 +152,9 @@ int main(void)
 #if REMOTE_TYPE == DBUS
     HAL_UARTEx_ReceiveToIdle_DMA(&huart5, rx_dbus_buff, DBUS_BUFF_SIZE);
 #endif
-    dm_motor_init();
+
 
     BSP_FDCAN_Init();
-
-    //拨弹盘电机初始化
-    shoot_2006_id1_speed_pid_init();//拨弹盘id1速度环初始化
 
   /* USER CODE END 2 */
 

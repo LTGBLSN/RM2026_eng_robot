@@ -1,5 +1,6 @@
-CMakeFiles/dm_h723_lib.elf.dir/Core/Src/main.c.obj: \
- D:\RoboMaster_git\RM2026_eng_robot\Core\Src\main.c \
+CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/ERROR_DETECTION.c.obj: \
+ D:\RoboMaster_git\RM2026_eng_robot\code_mf\Src\ERROR_DETECTION.c \
+ D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/DJI_motors.h \
  D:\RoboMaster_git\RM2026_eng_robot\Core\Inc/main.h \
  D:\RoboMaster_git\RM2026_eng_robot\Drivers\STM32H7xx_HAL_Driver\Inc/stm32h7xx_hal.h \
  D:\RoboMaster_git\RM2026_eng_robot\Core\Inc/stm32h7xx_hal_conf.h \
@@ -73,17 +74,6 @@ CMakeFiles/dm_h723_lib.elf.dir/Core/Src/main.c.obj: \
  D:\RoboMaster_git\RM2026_eng_robot\Middlewares\Third_Party\FreeRTOS\Source\include/queue.h \
  D:\RoboMaster_git\RM2026_eng_robot\Middlewares\Third_Party\FreeRTOS\Source\include/event_groups.h \
  D:\RoboMaster_git\RM2026_eng_robot\Middlewares\Third_Party\FreeRTOS\Source\include/timers.h \
- D:\RoboMaster_git\RM2026_eng_robot\Core\Inc/dma.h \
- D:\RoboMaster_git\RM2026_eng_robot\Core\Inc/main.h \
- D:\RoboMaster_git\RM2026_eng_robot\Core\Inc/fdcan.h \
- D:\RoboMaster_git\RM2026_eng_robot\Core\Inc/memorymap.h \
- D:\RoboMaster_git\RM2026_eng_robot\Core\Inc/spi.h \
- D:\RoboMaster_git\RM2026_eng_robot\Core\Inc/usart.h \
- D:\RoboMaster_git\RM2026_eng_robot\Core\Inc/gpio.h \
- D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/ws2812.h \
- D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/uart_printf.h \
- D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/remote_control.h \
- D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/BMI088driver.h \
- D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/bsp_can.h \
+ D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/ERROR_DETECTION.h \
  D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/dm_motor.h \
  D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/struct_typedef.h

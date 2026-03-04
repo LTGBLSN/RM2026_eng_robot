@@ -46,9 +46,29 @@ extern float INS_quat[4] ;
 extern float INS_angle[3] ;
 extern float INS_degree[3] ;
 
-//shoot
-extern float SHOOT_2006_ID1_GIVEN_SPEED ;
-extern int16_t SHOOT_2006_ID1_GIVEN_CURRENT ;
+
+extern int16_t CHASSIS_3508_ID1_GIVEN_CURRENT;
+extern int16_t CHASSIS_3508_ID2_GIVEN_CURRENT;
+extern int16_t CHASSIS_3508_ID3_GIVEN_CURRENT;
+extern int16_t CHASSIS_3508_ID4_GIVEN_CURRENT;
+extern int16_t CHASSIS_3508_ID5_GIVEN_CURRENT;
+extern int16_t CHASSIS_3508_ID6_GIVEN_CURRENT;
+
+extern float CHASSIS_3508_ID1_GIVEN_SPEED;
+extern float CHASSIS_3508_ID2_GIVEN_SPEED;
+extern float CHASSIS_3508_ID3_GIVEN_SPEED;
+extern float CHASSIS_3508_ID4_GIVEN_SPEED;
+extern float CHASSIS_3508_ID5_GIVEN_SPEED;
+extern float CHASSIS_3508_ID6_GIVEN_SPEED;
+
+extern float chassis_wheel_vx;
+extern float chassis_wheel_vy;
+extern float chassis_wheel_vround;
+extern float chassis_track_vx;
+extern float chassis_track_vround;
+
+
+
 /* USER CODE END EC */
 
 /* Exported macro ------------------------------------------------------------*/

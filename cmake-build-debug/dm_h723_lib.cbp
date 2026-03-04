@@ -571,7 +571,16 @@
 		<Unit filename="D:/RoboMaster_git/RM2026_eng_robot/code_mf/Inc/BMI088reg.h">
 			<Option target="dm_h723_lib.elf"/>
 		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2026_eng_robot/code_mf/Inc/CAN_SENT_TASK.h">
+			<Option target="dm_h723_lib.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2026_eng_robot/code_mf/Inc/CHASSIS_TASK.h">
+			<Option target="dm_h723_lib.elf"/>
+		</Unit>
 		<Unit filename="D:/RoboMaster_git/RM2026_eng_robot/code_mf/Inc/DJI_motors.h">
+			<Option target="dm_h723_lib.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2026_eng_robot/code_mf/Inc/ERROR_DETECTION.h">
 			<Option target="dm_h723_lib.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/RM2026_eng_robot/code_mf/Inc/GET_RC_TASK.h">
@@ -581,9 +590,6 @@
 			<Option target="dm_h723_lib.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/RM2026_eng_robot/code_mf/Inc/MahonyAHRS.h">
-			<Option target="dm_h723_lib.elf"/>
-		</Unit>
-		<Unit filename="D:/RoboMaster_git/RM2026_eng_robot/code_mf/Inc/SHOOT_TASK.h">
 			<Option target="dm_h723_lib.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/RM2026_eng_robot/code_mf/Inc/bsp_can.h">
@@ -619,10 +625,16 @@
 		<Unit filename="D:/RoboMaster_git/RM2026_eng_robot/code_mf/Src/CAN_SENT_TASK.c">
 			<Option target="dm_h723_lib.elf"/>
 		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2026_eng_robot/code_mf/Src/CHASSIS_TASK.c">
+			<Option target="dm_h723_lib.elf"/>
+		</Unit>
 		<Unit filename="D:/RoboMaster_git/RM2026_eng_robot/code_mf/Src/DEBUG_UART_TASK.c">
 			<Option target="dm_h723_lib.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/RM2026_eng_robot/code_mf/Src/DJI_motors.c">
+			<Option target="dm_h723_lib.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2026_eng_robot/code_mf/Src/ERROR_DETECTION.c">
 			<Option target="dm_h723_lib.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/RM2026_eng_robot/code_mf/Src/GET_RC_TASK.c">
@@ -635,9 +647,6 @@
 			<Option target="dm_h723_lib.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/RM2026_eng_robot/code_mf/Src/MahonyAHRS.c">
-			<Option target="dm_h723_lib.elf"/>
-		</Unit>
-		<Unit filename="D:/RoboMaster_git/RM2026_eng_robot/code_mf/Src/SHOOT_TASK.c">
 			<Option target="dm_h723_lib.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/RM2026_eng_robot/code_mf/Src/bsp_can.c">

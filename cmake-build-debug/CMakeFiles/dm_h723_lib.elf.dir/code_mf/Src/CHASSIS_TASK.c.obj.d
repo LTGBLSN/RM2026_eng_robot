@@ -1,5 +1,5 @@
-CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/SHOOT_TASK.c.obj: \
- D:\RoboMaster_git\RM2026_eng_robot\code_mf\Src\SHOOT_TASK.c \
+CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/CHASSIS_TASK.c.obj: \
+ D:\RoboMaster_git\RM2026_eng_robot\code_mf\Src\CHASSIS_TASK.c \
  D:\RoboMaster_git\RM2026_eng_robot\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS/cmsis_os.h \
  D:\RoboMaster_git\RM2026_eng_robot\Middlewares\Third_Party\FreeRTOS\Source\include/FreeRTOS.h \
  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
@@ -35,7 +35,8 @@ CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/SHOOT_TASK.c.obj: \
  D:\RoboMaster_git\RM2026_eng_robot\Middlewares\Third_Party\FreeRTOS\Source\include/queue.h \
  D:\RoboMaster_git\RM2026_eng_robot\Middlewares\Third_Party\FreeRTOS\Source\include/event_groups.h \
  D:\RoboMaster_git\RM2026_eng_robot\Middlewares\Third_Party\FreeRTOS\Source\include/timers.h \
- D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/remote_control.h \
+ D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/dm_motor.h \
+ D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/struct_typedef.h \
  D:\RoboMaster_git\RM2026_eng_robot\Core\Inc/main.h \
  D:\RoboMaster_git\RM2026_eng_robot\Drivers\STM32H7xx_HAL_Driver\Inc/stm32h7xx_hal.h \
  D:\RoboMaster_git\RM2026_eng_robot\Core\Inc/stm32h7xx_hal_conf.h \
@@ -74,8 +75,8 @@ CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/SHOOT_TASK.c.obj: \
  D:\RoboMaster_git\RM2026_eng_robot\Drivers\STM32H7xx_HAL_Driver\Inc/stm32h7xx_hal_tim_ex.h \
  D:\RoboMaster_git\RM2026_eng_robot\Drivers\STM32H7xx_HAL_Driver\Inc/stm32h7xx_hal_uart.h \
  D:\RoboMaster_git\RM2026_eng_robot\Drivers\STM32H7xx_HAL_Driver\Inc/stm32h7xx_hal_uart_ex.h \
- D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/SHOOT_TASK.h \
- D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/struct_typedef.h \
- D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/DJI_motors.h \
  D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/pid.h \
+ D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/DJI_motors.h \
+ D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/CHASSIS_TASK.h \
+ D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/dm_motor.h \
  D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/GET_RC_TASK.h
