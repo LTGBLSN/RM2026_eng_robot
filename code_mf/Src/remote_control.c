@@ -7,7 +7,7 @@
 #include "string.h"
 #include "usart.h"
 #include "remote_control.h"
-
+#include "BOARD_COMMUNICATION_TASK.h"
 
 
 #if REMOTE_TYPE == SBUS
@@ -200,6 +200,37 @@ void Process_VTM_Data(uint8_t *pData, uint16_t size)
             // 注意：由于结构体用了 __attribute__((packed))，
             // 这里的 memcpy 会完美对齐位域（bit-fields）
             memcpy(&vtm_remoter, pData, 21);
+        }
+    }
+}
+
+
+/**
+ * @brief 处理裁判系统协议包（自定义控制器数据 0x0302）
+ * @param pData 接收缓冲区指针
+ * @param size  HAL库返回的实际接收长度
+ */
+void Process_Custom_Controller_Data(uint8_t *pData, uint16_t size)
+{
+    // 1. 裁判系统协议包头检查
+    // 0x0302 包的总长度固定为 39 字节 (5头 + 2ID + 30数据 + 2尾)
+    if (pData[0] == 0xA5 && size == 39)
+    {
+        // 2. 解析命令码 cmd_id (位于偏移 5, 6)
+        uint16_t cmd_id = (pData[6] << 8) | pData[5];
+
+        if (cmd_id == 0x0302)
+        {
+            // 3. 校验整包 CRC16
+            if (verify_crc16_check_sum(pData, 39))
+            {
+                // 4. 数据段从 pData[7] 开始，长度为 30 字节
+                // 你的 follow_arm_data 结构体是 22 字节，它会映射到这 30 字节的前 22 位
+                memcpy(&follow_arm, &pData[7], sizeof(struct follow_arm_data));
+                time = HAL_GetTick();
+
+                // 此时 follow_arm.motor0 等成员已经可以直接使用了
+            }
         }
     }
 }

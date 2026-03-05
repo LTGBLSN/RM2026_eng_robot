@@ -10,13 +10,15 @@
 #include "DJI_motors.h"
 #include "dm_motor.h"
 #include "GET_RC_TASK.h"
+#include "BOARD_COMMUNICATION_TASK.h"
 
 void DEBUG_UART_TASK()
 {
     while (1)
     {
-        usart1_printf("%d \r\n",
-                      rcData.rc.ch[0]);
+        usart1_printf("%f,%f \r\n",
+                      DM4340_01.give_angle,
+                      DM4340_04.give_angle);
         osDelay(1);
     }
 }

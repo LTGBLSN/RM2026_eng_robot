@@ -79,4 +79,5 @@ CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/DEBUG_UART_TASK.c.obj: \
  D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/DJI_motors.h \
  D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/dm_motor.h \
  D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/struct_typedef.h \
- D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/GET_RC_TASK.h
+ D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/GET_RC_TASK.h \
+ D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/BOARD_COMMUNICATION_TASK.h

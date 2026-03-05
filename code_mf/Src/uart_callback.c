@@ -50,7 +50,10 @@ void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef * huart, uint16_t Size)
             // --- 自定义控制器/裁判系统处理 (以后扩展用) ---
         else if (rx_VTM_buff[0] == 0xA5)
         {
+
             // 这里可以写另一个函数，如 Process_Referee_Data(rx_VTM_buff, Size);
+            Process_Custom_Controller_Data(rx_VTM_buff, Size);
+
         }
 
 

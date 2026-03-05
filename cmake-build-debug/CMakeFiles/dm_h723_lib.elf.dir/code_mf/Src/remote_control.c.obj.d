@@ -62,4 +62,5 @@ CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/remote_control.c.obj: \
  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/strings.h \
  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/string.h \
  D:\RoboMaster_git\RM2026_eng_robot\Core\Inc/usart.h \
- D:\RoboMaster_git\RM2026_eng_robot\Core\Inc/main.h
+ D:\RoboMaster_git\RM2026_eng_robot\Core\Inc/main.h \
+ D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/BOARD_COMMUNICATION_TASK.h

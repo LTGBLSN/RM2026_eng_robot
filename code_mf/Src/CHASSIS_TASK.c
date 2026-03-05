@@ -149,6 +149,20 @@ void chassis_all_4340_given_angle_get()
 
     }
 
+    if(rcData.rc.s_only_tvm[1] == 1)
+    {
+        DM4340_01.give_angle = 0.0f ;
+        DM4340_02.give_angle = -0.0f ;
+        DM4340_03.give_angle = -0.143f ;
+        DM4340_04.give_angle = 0.143f ;
+
+    }
+    if(rcData.rc.s_only_tvm[4] == 1)
+    {
+        DM4340_03.give_angle = DM4340_03.give_angle - 0.00001f * (float)rcData.rc.ch[4];
+        DM4340_04.give_angle = DM4340_04.give_angle + 0.00001f * (float)rcData.rc.ch[4];
+    }
+
 }
 
 void chassis_all_4340_pid_control()

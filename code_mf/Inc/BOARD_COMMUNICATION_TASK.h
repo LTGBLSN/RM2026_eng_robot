@@ -18,10 +18,13 @@ struct follow_arm_data
     int16_t motor4;
     int16_t motor5;
     int16_t clamp;
+    int16_t motor7;
+    int16_t motor8;
+    int16_t motor9;
     uint8_t stateA;
     uint8_t stateB;
 
-};
+} __attribute__((packed)) ;
 
 void chassis_motor_4_clamp_state_2_arm(int16_t motor4 , int16_t motor5 , int16_t clamp , uint8_t stateA , uint8_t stateB , uint16_t id, uint8_t can_channel);
 void chassis_motor_0_3_2_arm(int16_t motor0 , int16_t motor1 , int16_t motor2 , int16_t motor3 , uint16_t id, uint8_t can_channel);

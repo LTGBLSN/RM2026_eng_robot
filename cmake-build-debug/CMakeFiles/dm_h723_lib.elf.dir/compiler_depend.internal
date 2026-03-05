@@ -2865,6 +2865,7 @@ CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/DEBUG_UART_TASK.c.obj
  D:/RoboMaster_git/RM2026_eng_robot/Middlewares/Third_Party/FreeRTOS/Source/include/task.h
  D:/RoboMaster_git/RM2026_eng_robot/Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
  D:/RoboMaster_git/RM2026_eng_robot/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
+ D:/RoboMaster_git/RM2026_eng_robot/code_mf/Inc/BOARD_COMMUNICATION_TASK.h
  D:/RoboMaster_git/RM2026_eng_robot/code_mf/Inc/DJI_motors.h
  D:/RoboMaster_git/RM2026_eng_robot/code_mf/Inc/GET_RC_TASK.h
  D:/RoboMaster_git/RM2026_eng_robot/code_mf/Inc/IMU_DATA_GET.h
@@ -3405,7 +3406,9 @@ CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/can_receive.c.obj
  D:/RoboMaster_git/RM2026_eng_robot/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h
  D:/RoboMaster_git/RM2026_eng_robot/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h
  D:/RoboMaster_git/RM2026_eng_robot/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h
+ D:/RoboMaster_git/RM2026_eng_robot/code_mf/Inc/BOARD_COMMUNICATION_TASK.h
  D:/RoboMaster_git/RM2026_eng_robot/code_mf/Inc/DJI_motors.h
+ D:/RoboMaster_git/RM2026_eng_robot/code_mf/Inc/GET_RC_TASK.h
  D:/RoboMaster_git/RM2026_eng_robot/code_mf/Inc/can_receive.h
  D:/RoboMaster_git/RM2026_eng_robot/code_mf/Inc/dm_motor.h
  D:/RoboMaster_git/RM2026_eng_robot/code_mf/Inc/struct_typedef.h
@@ -3596,6 +3599,7 @@ CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/remote_control.c.obj
  D:/RoboMaster_git/RM2026_eng_robot/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h
  D:/RoboMaster_git/RM2026_eng_robot/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h
  D:/RoboMaster_git/RM2026_eng_robot/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h
+ D:/RoboMaster_git/RM2026_eng_robot/code_mf/Inc/BOARD_COMMUNICATION_TASK.h
  D:/RoboMaster_git/RM2026_eng_robot/code_mf/Inc/remote_control.h
 
 CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/uart_callback.c.obj

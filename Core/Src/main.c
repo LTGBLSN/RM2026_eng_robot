@@ -82,6 +82,8 @@ float chassis_wheel_vround = 0.0f;
 float chassis_track_vx = 0.0f;
 float chassis_track_vround = 0.0f;
 
+uint32_t time ;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/

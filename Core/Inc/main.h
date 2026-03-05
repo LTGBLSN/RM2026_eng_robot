@@ -67,6 +67,8 @@ extern float chassis_wheel_vround;
 extern float chassis_track_vx;
 extern float chassis_track_vround;
 
+extern uint32_t time ;
+
 
 
 /* USER CODE END EC */

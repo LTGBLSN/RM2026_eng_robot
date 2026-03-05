@@ -157,6 +157,7 @@ struct remote_data_t
 } __attribute__((packed)) ;
 
 void Process_VTM_Data(uint8_t *pData, uint16_t size);
+void Process_Custom_Controller_Data(uint8_t *pData, uint16_t size);
 
 
 
