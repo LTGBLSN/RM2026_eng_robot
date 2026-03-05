@@ -57,6 +57,7 @@ osThreadId shoot_taskHandle;
 osThreadId stop_checkHandle;
 osThreadId chassis_taskHandle;
 osThreadId error_checkHandle;
+osThreadId board_communicaHandle;
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -73,6 +74,7 @@ void SHOOT_TASK(void const * argument);
 void SHOOOT_STOP_CHECK(void const * argument);
 void CHASSIS_TASK(void const * argument);
 void ERROR_DETECTION(void const * argument);
+void BOARD_COMMUNICATION_TASK(void const * argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -158,6 +160,10 @@ void MX_FREERTOS_Init(void) {
   /* definition and creation of error_check */
   osThreadDef(error_check, ERROR_DETECTION, osPriorityIdle, 0, 256);
   error_checkHandle = osThreadCreate(osThread(error_check), NULL);
+
+  /* definition and creation of board_communica */
+  osThreadDef(board_communica, BOARD_COMMUNICATION_TASK, osPriorityIdle, 0, 256);
+  board_communicaHandle = osThreadCreate(osThread(board_communica), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -343,6 +349,24 @@ __weak void ERROR_DETECTION(void const * argument)
     osDelay(1);
   }
   /* USER CODE END ERROR_DETECTION */
+}
+
+/* USER CODE BEGIN Header_BOARD_COMMUNICATION_TASK */
+/**
+* @brief Function implementing the board_communica thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_BOARD_COMMUNICATION_TASK */
+__weak void BOARD_COMMUNICATION_TASK(void const * argument)
+{
+  /* USER CODE BEGIN BOARD_COMMUNICATION_TASK */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END BOARD_COMMUNICATION_TASK */
 }
 
 /* Private application code --------------------------------------------------*/

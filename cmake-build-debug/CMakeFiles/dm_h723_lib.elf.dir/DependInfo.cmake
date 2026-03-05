@@ -87,6 +87,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/RoboMaster_git/RM2026_eng_robot/Middlewares/Third_Party/FreeRTOS/Source/timers.c" "CMakeFiles/dm_h723_lib.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj" "gcc" "CMakeFiles/dm_h723_lib.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj.d"
   "D:/RoboMaster_git/RM2026_eng_robot/code_mf/Src/BMI088Middleware.c" "CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/BMI088Middleware.c.obj" "gcc" "CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/BMI088Middleware.c.obj.d"
   "D:/RoboMaster_git/RM2026_eng_robot/code_mf/Src/BMI088driver.c" "CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/BMI088driver.c.obj" "gcc" "CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/BMI088driver.c.obj.d"
+  "D:/RoboMaster_git/RM2026_eng_robot/code_mf/Src/BOARD_COMMUNICATION_TASK.c" "CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/BOARD_COMMUNICATION_TASK.c.obj" "gcc" "CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/BOARD_COMMUNICATION_TASK.c.obj.d"
   "D:/RoboMaster_git/RM2026_eng_robot/code_mf/Src/CAN_SENT_TASK.c" "CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/CAN_SENT_TASK.c.obj" "gcc" "CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/CAN_SENT_TASK.c.obj.d"
   "D:/RoboMaster_git/RM2026_eng_robot/code_mf/Src/CHASSIS_TASK.c" "CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/CHASSIS_TASK.c.obj" "gcc" "CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/CHASSIS_TASK.c.obj.d"
   "D:/RoboMaster_git/RM2026_eng_robot/code_mf/Src/DEBUG_UART_TASK.c" "CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/DEBUG_UART_TASK.c.obj" "gcc" "CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/DEBUG_UART_TASK.c.obj.d"
