@@ -126,6 +126,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/pid.c.obj.d"
   "CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/remote_control.c.obj"
   "CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/remote_control.c.obj.d"
+  "CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/uart_callback.c.obj"
+  "CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/uart_callback.c.obj.d"
   "CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/uart_printf.c.obj"
   "CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/uart_printf.c.obj.d"
   "CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/ws2812.c.obj"

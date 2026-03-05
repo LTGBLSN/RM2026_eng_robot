@@ -78,6 +78,28 @@ void GET_RC_TASK()
 
 #endif
 
+#if REMOTE_TYPE == VTM
+        rcData.rc.ch[0] = (int16_t)( ((float)vtm_remoter.ch_0 - VTM_CHANNEL_MID) / VTM_CHANNEL_HALF_RANGE * DBUS_CHANNEL_HALF_RANGE );
+        rcData.rc.ch[1] = (int16_t)( ((float)vtm_remoter.ch_1 - VTM_CHANNEL_MID) / VTM_CHANNEL_HALF_RANGE * DBUS_CHANNEL_HALF_RANGE );
+        rcData.rc.ch[2] = (int16_t)( ((float)vtm_remoter.ch_2 - VTM_CHANNEL_MID) / VTM_CHANNEL_HALF_RANGE * DBUS_CHANNEL_HALF_RANGE );
+        rcData.rc.ch[3] = (int16_t)( ((float)vtm_remoter.ch_3 - VTM_CHANNEL_MID) / VTM_CHANNEL_HALF_RANGE * DBUS_CHANNEL_HALF_RANGE );
+        rcData.rc.ch[4] = (int16_t)( ((float)vtm_remoter.ch_4 - VTM_CHANNEL_MID) / VTM_CHANNEL_HALF_RANGE * DBUS_CHANNEL_HALF_RANGE );
+        rcData.rc.s_only_tvm[0] = vtm_remoter.fn_1;
+        rcData.rc.s_only_tvm[1] = vtm_remoter.pause;
+        rcData.rc.s_only_tvm[2] = vtm_remoter.mode_sw;
+        rcData.rc.s_only_tvm[3] = vtm_remoter.fn_2;
+        rcData.rc.s_only_tvm[4] = vtm_remoter.trigger;
+        rcData.mouse.x = vtm_remoter.mouse_x;
+        rcData.mouse.y = vtm_remoter.mouse_y;
+        rcData.mouse.z = vtm_remoter.mouse_z;
+        rcData.mouse.press_l = vtm_remoter.mouse_left;
+        rcData.mouse.press_r = vtm_remoter.mouse_right;
+        rcData.mouse.press_mid = vtm_remoter.mouse_middle;
+        rcData.key.v = vtm_remoter.key;
+
+
+#endif
+
 
 
         osDelay(1);

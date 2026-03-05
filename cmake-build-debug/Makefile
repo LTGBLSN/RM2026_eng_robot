@@ -1648,6 +1648,30 @@ code_mf/Src/remote_control.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\dm_h723_lib.elf.dir\build.make CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/remote_control.c.s
 .PHONY : code_mf/Src/remote_control.c.s
 
+code_mf/Src/uart_callback.obj: code_mf/Src/uart_callback.c.obj
+.PHONY : code_mf/Src/uart_callback.obj
+
+# target to build an object file
+code_mf/Src/uart_callback.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dm_h723_lib.elf.dir\build.make CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/uart_callback.c.obj
+.PHONY : code_mf/Src/uart_callback.c.obj
+
+code_mf/Src/uart_callback.i: code_mf/Src/uart_callback.c.i
+.PHONY : code_mf/Src/uart_callback.i
+
+# target to preprocess a source file
+code_mf/Src/uart_callback.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dm_h723_lib.elf.dir\build.make CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/uart_callback.c.i
+.PHONY : code_mf/Src/uart_callback.c.i
+
+code_mf/Src/uart_callback.s: code_mf/Src/uart_callback.c.s
+.PHONY : code_mf/Src/uart_callback.s
+
+# target to generate assembly for a file
+code_mf/Src/uart_callback.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dm_h723_lib.elf.dir\build.make CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/uart_callback.c.s
+.PHONY : code_mf/Src/uart_callback.c.s
+
 code_mf/Src/uart_printf.obj: code_mf/Src/uart_printf.c.obj
 .PHONY : code_mf/Src/uart_printf.obj
 
@@ -1895,6 +1919,9 @@ help:
 	@echo ... code_mf/Src/remote_control.obj
 	@echo ... code_mf/Src/remote_control.i
 	@echo ... code_mf/Src/remote_control.s
+	@echo ... code_mf/Src/uart_callback.obj
+	@echo ... code_mf/Src/uart_callback.i
+	@echo ... code_mf/Src/uart_callback.s
 	@echo ... code_mf/Src/uart_printf.obj
 	@echo ... code_mf/Src/uart_printf.i
 	@echo ... code_mf/Src/uart_printf.s

@@ -15,10 +15,8 @@ void DEBUG_UART_TASK()
 {
     while (1)
     {
-        usart1_printf("%f,%f,%d \r\n",
-                      DM4340_01.return_angle,
-                      DM4340_04.return_angle,
-                      CHASSIS_3508_ID1_GIVEN_CURRENT);
+        usart1_printf("%d \r\n",
+                      rcData.rc.ch[0]);
         osDelay(1);
     }
 }

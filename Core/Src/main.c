@@ -153,6 +153,7 @@ int main(void)
     HAL_UARTEx_ReceiveToIdle_DMA(&huart5, rx_dbus_buff, DBUS_BUFF_SIZE);
 #endif
 
+    HAL_UARTEx_ReceiveToIdle_DMA(&huart7, rx_VTM_buff, VTM_ALL_BUFF_SIZE);
 
     BSP_FDCAN_Init();
 

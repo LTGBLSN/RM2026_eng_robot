@@ -17,9 +17,17 @@ void CAN_SENT_TASK()
 {
     while (1)
     {
-        switch (rcData.rc.s[0])
+        switch (rcData.rc.s_only_tvm[2])
         {
-            case 3:
+            case 0:
+            {
+                FDCAN_DJI_motors(0, 0, 0, 0, 0x200, CAN_CHANNEL_2);
+                FDCAN_DJI_motors(0, 0, 0, 0, 0x1FF, CAN_CHANNEL_2);
+                DM_CAN_SENT(DM_NO_CURRENT);
+                break;
+            }
+
+            case 1:
             {//起立但轮毂不动
                 {
 
@@ -30,7 +38,8 @@ void CAN_SENT_TASK()
                     break;
                 }
             }
-            case 1:
+
+            case 2:
             {//移动
                 FDCAN_DJI_motors(
                         CHASSIS_3508_ID1_GIVEN_CURRENT,
@@ -49,6 +58,7 @@ void CAN_SENT_TASK()
                 DM_CAN_SENT(DM_GIVE_CURRENT);
                 break;
             }
+
             default:
             {
                 FDCAN_DJI_motors(0, 0, 0, 0, 0x200, CAN_CHANNEL_2);

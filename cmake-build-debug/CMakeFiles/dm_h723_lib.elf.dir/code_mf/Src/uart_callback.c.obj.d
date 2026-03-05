@@ -1,42 +1,24 @@
-CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/CHASSIS_TASK.c.obj: \
- D:\RoboMaster_git\RM2026_eng_robot\code_mf\Src\CHASSIS_TASK.c \
- D:\RoboMaster_git\RM2026_eng_robot\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS/cmsis_os.h \
- D:\RoboMaster_git\RM2026_eng_robot\Middlewares\Third_Party\FreeRTOS\Source\include/FreeRTOS.h \
- C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
- C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h \
- C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdint.h \
- C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_default_types.h \
- C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/features.h \
- C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_newlib_version.h \
- C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_intsup.h \
- C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_stdint.h \
- D:\RoboMaster_git\RM2026_eng_robot\Core\Inc/FreeRTOSConfig.h \
- D:\RoboMaster_git\RM2026_eng_robot\Middlewares\Third_Party\FreeRTOS\Source\include/projdefs.h \
- D:\RoboMaster_git\RM2026_eng_robot\Middlewares\Third_Party\FreeRTOS\Source\include/portable.h \
- D:\RoboMaster_git\RM2026_eng_robot\Middlewares\Third_Party\FreeRTOS\Source\include/deprecated_definitions.h \
- D:\RoboMaster_git\RM2026_eng_robot\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM4F/portmacro.h \
- D:\RoboMaster_git\RM2026_eng_robot\Middlewares\Third_Party\FreeRTOS\Source\include/mpu_wrappers.h \
- C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/reent.h \
- C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/reent.h \
+CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/uart_callback.c.obj: \
+ D:\RoboMaster_git\RM2026_eng_robot\code_mf\Src\uart_callback.c \
+ C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/string.h \
  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_ansi.h \
  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/newlib.h \
+ C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_newlib_version.h \
  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/config.h \
  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/ieeefp.h \
+ C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/features.h \
+ C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/reent.h \
+ C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_ansi.h \
+ C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/cdefs.h \
+ C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_default_types.h \
  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_types.h \
  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_types.h \
  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/lock.h \
- D:\RoboMaster_git\RM2026_eng_robot\Middlewares\Third_Party\FreeRTOS\Source\include/task.h \
- D:\RoboMaster_git\RM2026_eng_robot\Middlewares\Third_Party\FreeRTOS\Source\include/list.h \
- D:\RoboMaster_git\RM2026_eng_robot\Middlewares\Third_Party\FreeRTOS\Source\include/timers.h \
- D:\RoboMaster_git\RM2026_eng_robot\Middlewares\Third_Party\FreeRTOS\Source\include/task.h \
- D:\RoboMaster_git\RM2026_eng_robot\Middlewares\Third_Party\FreeRTOS\Source\include/queue.h \
- D:\RoboMaster_git\RM2026_eng_robot\Middlewares\Third_Party\FreeRTOS\Source\include/semphr.h \
- D:\RoboMaster_git\RM2026_eng_robot\Middlewares\Third_Party\FreeRTOS\Source\include/queue.h \
- D:\RoboMaster_git\RM2026_eng_robot\Middlewares\Third_Party\FreeRTOS\Source\include/event_groups.h \
- D:\RoboMaster_git\RM2026_eng_robot\Middlewares\Third_Party\FreeRTOS\Source\include/timers.h \
- D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/dm_motor.h \
- D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/struct_typedef.h \
+ C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_locale.h \
+ C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/strings.h \
+ C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/string.h \
+ D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/remote_control.h \
  D:\RoboMaster_git\RM2026_eng_robot\Core\Inc/main.h \
  D:\RoboMaster_git\RM2026_eng_robot\Drivers\STM32H7xx_HAL_Driver\Inc/stm32h7xx_hal.h \
  D:\RoboMaster_git\RM2026_eng_robot\Core\Inc/stm32h7xx_hal_conf.h \
@@ -45,6 +27,10 @@ CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/CHASSIS_TASK.c.obj: \
  D:\RoboMaster_git\RM2026_eng_robot\Drivers\CMSIS\Device\ST\STM32H7xx\Include/stm32h7xx.h \
  D:\RoboMaster_git\RM2026_eng_robot\Drivers\CMSIS\Device\ST\STM32H7xx\Include/stm32h723xx.h \
  D:\RoboMaster_git\RM2026_eng_robot\Drivers\CMSIS\Include/core_cm7.h \
+ C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h \
+ C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdint.h \
+ C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_intsup.h \
+ C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_stdint.h \
  D:\RoboMaster_git\RM2026_eng_robot\Drivers\CMSIS\Include/cmsis_version.h \
  D:\RoboMaster_git\RM2026_eng_robot\Drivers\CMSIS\Include/cmsis_compiler.h \
  D:\RoboMaster_git\RM2026_eng_robot\Drivers\CMSIS\Include/cmsis_gcc.h \
@@ -52,7 +38,6 @@ CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/CHASSIS_TASK.c.obj: \
  D:\RoboMaster_git\RM2026_eng_robot\Drivers\CMSIS\Device\ST\STM32H7xx\Include/system_stm32h7xx.h \
  D:\RoboMaster_git\RM2026_eng_robot\Drivers\STM32H7xx_HAL_Driver\Inc/Legacy/stm32_hal_legacy.h \
  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/math.h \
- C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_ansi.h \
  D:\RoboMaster_git\RM2026_eng_robot\Drivers\STM32H7xx_HAL_Driver\Inc/stm32h7xx_hal_rcc_ex.h \
  D:\RoboMaster_git\RM2026_eng_robot\Drivers\STM32H7xx_HAL_Driver\Inc/stm32h7xx_hal_gpio.h \
  D:\RoboMaster_git\RM2026_eng_robot\Drivers\STM32H7xx_HAL_Driver\Inc/stm32h7xx_hal_gpio_ex.h \
@@ -75,9 +60,5 @@ CMakeFiles/dm_h723_lib.elf.dir/code_mf/Src/CHASSIS_TASK.c.obj: \
  D:\RoboMaster_git\RM2026_eng_robot\Drivers\STM32H7xx_HAL_Driver\Inc/stm32h7xx_hal_tim_ex.h \
  D:\RoboMaster_git\RM2026_eng_robot\Drivers\STM32H7xx_HAL_Driver\Inc/stm32h7xx_hal_uart.h \
  D:\RoboMaster_git\RM2026_eng_robot\Drivers\STM32H7xx_HAL_Driver\Inc/stm32h7xx_hal_uart_ex.h \
- D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/pid.h \
- D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/DJI_motors.h \
- D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/CHASSIS_TASK.h \
- D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/dm_motor.h \
- D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/GET_RC_TASK.h \
- D:\RoboMaster_git\RM2026_eng_robot\code_mf\Inc/remote_control.h
+ D:\RoboMaster_git\RM2026_eng_robot\Core\Inc/usart.h \
+ D:\RoboMaster_git\RM2026_eng_robot\Core\Inc/main.h

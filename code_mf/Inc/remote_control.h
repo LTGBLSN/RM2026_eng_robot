@@ -5,25 +5,31 @@
 #ifndef DM_H723_LIB_REMOTE_CONTROL_H
 #define DM_H723_LIB_REMOTE_CONTROL_H
 
-
+#include "main.h"
 
 #define DBUS 0
 #define SBUS 1
+#define VTM  2
 
-#define REMOTE_TYPE DBUS//遥控器协议切换，DBUS或SBUS
+#define REMOTE_TYPE VTM//遥控器协议切换，DBUS或SBUS
 
-#define SBUS_CHANNEL_MIN 174.0f
 #define SBUS_CHANNEL_MAX 1811.0f
+#define SBUS_CHANNEL_MIN 174.0f
 #define SBUS_CHANNEL_MID ((SBUS_CHANNEL_MAX + SBUS_CHANNEL_MIN) / 2)
 #define SBUS_CHANNEL_HALF_RANGE ((SBUS_CHANNEL_MAX - SBUS_CHANNEL_MIN) / 2)
 
 #define DBUS_CHANNEL_HALF_RANGE 660.0f
 
+#define VTM_CHANNEL_MAX 1684.0f
+#define VTM_CHANNEL_MIN 364.0f
+#define VTM_CHANNEL_MID ((VTM_CHANNEL_MAX + VTM_CHANNEL_MIN) / 2)
+#define VTM_CHANNEL_HALF_RANGE ((VTM_CHANNEL_MAX - VTM_CHANNEL_MIN) / 2)
+
 
 
 #if REMOTE_TYPE == SBUS
 
-#include "main.h"
+
 
 #define SBUS_BUFF_SIZE	25
 
@@ -83,7 +89,6 @@ extern subs_remoter_t sbus_remoter;
 #if REMOTE_TYPE == DBUS
 
 
-#include "main.h"
 
 #define DBUS_FRAME_SIZE      18
 #define DBUS_BUFF_SIZE       (DBUS_FRAME_SIZE * 2) // 这里的缓存设大一点防止溢出
@@ -116,6 +121,42 @@ extern uint8_t rx_dbus_buff[DBUS_BUFF_SIZE];
 void dbus_frame_parse(dbus_ctrl_t *remoter, uint8_t *buf);
 
 #endif
+
+
+
+//vtm
+
+#define VTM_ALL_BUFF_SIZE       256
+
+extern uint8_t rx_VTM_buff[VTM_ALL_BUFF_SIZE];
+extern struct remote_data_t vtm_remoter;
+
+struct remote_data_t
+{
+    uint8_t sof_1;
+    uint8_t sof_2;
+    uint64_t ch_0:11;
+    uint64_t ch_1:11;
+    uint64_t ch_3:11;
+    uint64_t ch_2:11;
+    uint64_t mode_sw:2;//中间档位开关
+    uint64_t pause:1;//暂停按键
+    uint64_t fn_1:1;//fn按键
+    uint64_t fn_2:1;//旋转相机按键
+    uint64_t ch_4:11;//波轮
+    uint64_t trigger:1;//扳机按键
+
+    int16_t mouse_x;
+    int16_t mouse_y;
+    int16_t mouse_z;
+    uint8_t mouse_left:2;//左键
+    uint8_t mouse_right:2;//右键
+    uint8_t mouse_middle:2;//中键
+    uint16_t key;
+    uint16_t crc16;
+} __attribute__((packed)) ;
+
+void Process_VTM_Data(uint8_t *pData, uint16_t size);
 
 
 

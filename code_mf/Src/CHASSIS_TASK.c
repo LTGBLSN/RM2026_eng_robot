@@ -10,6 +10,7 @@
 #include "DJI_motors.h"
 #include "CHASSIS_TASK.h"
 #include "GET_RC_TASK.h"
+#include "remote_control.h"
 
 pid_type_def chassis_3508_id1_speed_pid;
 pid_type_def chassis_3508_id2_speed_pid;
@@ -58,7 +59,7 @@ void CHASSIS_TASK()
         //底盘4340腿角度获取
         chassis_all_4340_given_angle_get();
         //底盘4340pid计算
-        if(rcData.rc.s[0] == 3 | rcData.rc.s[0] == 1)
+        if(rcData.rc.s_only_tvm[2] == 1 | rcData.rc.s_only_tvm[2] == 2)
         {
             chassis_all_4340_pid_control();
         }
@@ -68,7 +69,7 @@ void CHASSIS_TASK()
 
 
         //底盘目标速度获取
-        if(rcData.rc.s[1] != 1 )
+        if(rcData.rc.s_only_tvm[2] == 2 )
         {
             chassis_all_3508_speed_get();
         }
@@ -90,14 +91,11 @@ void CHASSIS_TASK()
 
 void chassis_all_4340_given_angle_get()
 {
-    switch (rcData.rc.s[1])
+    switch (rcData.rc.s_only_tvm[2])
     {
-        case 3:
+        case 0:
         {
-//            DM4340_01.give_angle = 1.714f ;
-//            DM4340_02.give_angle = -1.714f ;
-//            DM4340_03.give_angle = -0.895f ;
-//            DM4340_04.give_angle = 0.895f ;
+
             DM4340_01.give_angle = DM4340_01.give_angle ;
             DM4340_02.give_angle = DM4340_02.give_angle ;
             DM4340_03.give_angle = DM4340_03.give_angle ;
@@ -110,16 +108,18 @@ void chassis_all_4340_given_angle_get()
             DM4340_02.give_angle = DM4340_02.give_angle - 0.00001f * (float)rcData.rc.ch[3];
             DM4340_03.give_angle = DM4340_03.give_angle - 0.00001f * (float)rcData.rc.ch[1];
             DM4340_04.give_angle = DM4340_04.give_angle + 0.00001f * (float)rcData.rc.ch[1];
+
             break;
         }
         case 2:
         {
-            DM4340_01.give_angle = 1.315f ;
-            DM4340_02.give_angle = -1.315f ;
-            DM4340_03.give_angle = -0.143f ;
-            DM4340_04.give_angle = 0.143f ;
+            DM4340_01.give_angle = DM4340_01.give_angle ;
+            DM4340_02.give_angle = DM4340_02.give_angle ;
+            DM4340_03.give_angle = DM4340_03.give_angle ;
+            DM4340_04.give_angle = DM4340_04.give_angle ;
             break;
         }
+
         default:
         {
             DM4340_01.give_angle = 1.714f ;
@@ -129,6 +129,23 @@ void chassis_all_4340_given_angle_get()
             break;
         }
 
+
+    }
+
+    if(rcData.rc.s_only_tvm[0] == 1)
+    {
+        DM4340_01.give_angle = 1.315f ;
+        DM4340_02.give_angle = -1.315f ;
+        DM4340_03.give_angle = -0.143f ;
+        DM4340_04.give_angle = 0.143f ;
+
+    }
+    if(rcData.rc.s_only_tvm[3] == 1)
+    {
+        DM4340_01.give_angle = 1.714f ;
+        DM4340_02.give_angle = -1.714f ;
+        DM4340_03.give_angle = -0.895f ;
+        DM4340_04.give_angle = 0.895f ;
 
     }
 

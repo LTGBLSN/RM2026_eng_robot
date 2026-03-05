@@ -664,6 +664,9 @@
 		<Unit filename="D:/RoboMaster_git/RM2026_eng_robot/code_mf/Src/remote_control.c">
 			<Option target="dm_h723_lib.elf"/>
 		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2026_eng_robot/code_mf/Src/uart_callback.c">
+			<Option target="dm_h723_lib.elf"/>
+		</Unit>
 		<Unit filename="D:/RoboMaster_git/RM2026_eng_robot/code_mf/Src/uart_printf.c">
 			<Option target="dm_h723_lib.elf"/>
 		</Unit>
