@@ -32,14 +32,14 @@ void BOARD_COMMUNICATION_TASK()
                                           0xA2,
                                           CAN_CHANNEL_3);
         chassis_rc_2_arm(0,
-                         rcData.rc.s_only_tvm[2],
+                         rcData.rc.s_only_tvm[1],
                          rcData.rc.ch[0],
                          rcData.rc.ch[1],
                          0x1C,
                          CAN_CHANNEL_3);
 
         chassis_rc_2_arm(0,
-                         rcData.rc.s_only_tvm[1],
+                         rcData.rc.s_only_tvm[2],
                          rcData.rc.ch[2],
                          rcData.rc.ch[3],
                          0x2C,
