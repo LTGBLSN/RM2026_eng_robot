@@ -97,7 +97,7 @@ void eng_all_4340_given_angle_get()
         }
         case 1:
         {
-            DM4310_01.give_angle = DM4310_01.give_angle ;
+            DM4310_01.give_angle = 0.0f ;
             DM4310_02.give_angle = MOTOR2_ABSCISSA ;
             DM4310_03.give_angle = -MOTOR3_ABSCISSA ;
             DM4310_04.give_angle = MOTOR4_ABSCISSA ;
@@ -113,16 +113,16 @@ void eng_all_4340_given_angle_get()
         {
             if(rcData.rc.s[0] == 1)
             {
-                DM4340_05.give_angle = DM4340_05.give_angle + 0.000005f * (float)rcData.rc.ch[0];
-                DM4340_06.give_angle = DM4340_06.give_angle - 0.000005f * (float)rcData.rc.ch[1];
-                DM4340_07.give_angle = DM4340_07.give_angle - 0.000005f * (float)rcData.rc.ch[2];
+//                DM4340_05.give_angle = DM4340_05.give_angle + 0.000005f * (float)rcData.rc.ch[0];
+//                DM4340_06.give_angle = DM4340_06.give_angle - 0.000005f * (float)rcData.rc.ch[1];
+//                DM4340_07.give_angle = DM4340_07.give_angle - 0.000005f * (float)rcData.rc.ch[2];
             }
             else
             {
-                DM4310_01.give_angle = DM4310_01.give_angle + 0.000005f * (float)rcData.rc.ch[0];
-                DM4310_02.give_angle = DM4310_02.give_angle - 0.000005f * (float)rcData.rc.ch[1];
-                DM4310_03.give_angle = DM4310_03.give_angle - 0.000005f * (float)rcData.rc.ch[2];
-                DM4310_04.give_angle = DM4310_04.give_angle + 0.000005f * (float)rcData.rc.ch[3];
+//                DM4310_01.give_angle = DM4310_01.give_angle + 0.000005f * (float)rcData.rc.ch[0];
+//                DM4310_02.give_angle = DM4310_02.give_angle - 0.000005f * (float)rcData.rc.ch[1];
+//                DM4310_03.give_angle = DM4310_03.give_angle - 0.000005f * (float)rcData.rc.ch[2];
+//                DM4310_04.give_angle = DM4310_04.give_angle + 0.000005f * (float)rcData.rc.ch[3];
             }
 
 
