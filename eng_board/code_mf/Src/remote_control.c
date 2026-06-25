@@ -226,7 +226,7 @@ void Process_Custom_Controller_Data(uint8_t *pData, uint16_t size)
             {
                 // 4. 数据段从 pData[7] 开始，长度为 30 字节
                 // 你的 follow_arm_data 结构体是 22 字节，它会映射到这 30 字节的前 22 位
-//                memcpy(&follow_arm, &pData[7], sizeof(struct follow_arm_data));
+                memcpy(&follow_arm, &pData[7], sizeof(struct follow_arm_data));
                 time = HAL_GetTick();
             }
         }

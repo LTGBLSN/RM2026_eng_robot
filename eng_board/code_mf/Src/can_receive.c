@@ -171,23 +171,23 @@ void HAL_FDCAN_RxFifo0Callback(FDCAN_HandleTypeDef *hfdcan, uint32_t RxFifo0ITs)
                     rcData.rc.ch[3] = (int16_t)((rx_data[6] << 8) | rx_data[7]);
                     break;
                 }
-                case 0xA1:
-                {
-                    follow_arm.motor0 = (int16_t)((rx_data[0] << 8) | rx_data[1]);
-                    follow_arm.motor1 = (int16_t)((rx_data[2] << 8) | rx_data[3]);
-                    follow_arm.motor2 = (int16_t)((rx_data[4] << 8) | rx_data[5]);
-                    follow_arm.motor3 = (int16_t)((rx_data[6] << 8) | rx_data[7]);
-                    break;
-                }
-                case 0xA2:
-                {
-                    follow_arm.motor4 = (int16_t)((rx_data[0] << 8) | rx_data[1]);
-                    follow_arm.motor5 = (int16_t)((rx_data[2] << 8) | rx_data[3]);
-                    follow_arm.clamp = (int16_t)((rx_data[4] << 8) | rx_data[5]);
-                    follow_arm.stateA = rx_data[6];
-                    follow_arm.stateB = rx_data[7];
-                    break;
-                }
+//                case 0xA1:
+//                {
+//                    follow_arm.motor0 = (int16_t)((rx_data[0] << 8) | rx_data[1]);
+//                    follow_arm.motor1 = (int16_t)((rx_data[2] << 8) | rx_data[3]);
+//                    follow_arm.motor2 = (int16_t)((rx_data[4] << 8) | rx_data[5]);
+//                    follow_arm.motor3 = (int16_t)((rx_data[6] << 8) | rx_data[7]);
+//                    break;
+//                }
+//                case 0xA2:
+//                {
+//                    follow_arm.motor4 = (int16_t)((rx_data[0] << 8) | rx_data[1]);
+//                    follow_arm.motor5 = (int16_t)((rx_data[2] << 8) | rx_data[3]);
+//                    follow_arm.clamp = (int16_t)((rx_data[4] << 8) | rx_data[5]);
+//                    follow_arm.stateA = rx_data[6];
+//                    follow_arm.stateB = rx_data[7];
+//                    break;
+//                }
 
                 default:
                     break;

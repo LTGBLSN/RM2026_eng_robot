@@ -223,6 +223,8 @@ float yaw_imu_preprocess ;
 
 uint8_t uart1_receive_data ;//串口当前接收字节
 
+int16_t key ;
+
 
 /* USER CODE END PTD */
 

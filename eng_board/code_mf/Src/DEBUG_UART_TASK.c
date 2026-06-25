@@ -16,13 +16,8 @@ void DEBUG_UART_TASK()
 {
     while (1)
     {
-        usart1_printf("%f,%f,%f,%f,%f,%f \r\n",
-                      MOTOR2_ABSCISSA,
-                      MOTOR3_ABSCISSA,
-                      MOTOR4_ABSCISSA,
-                      MOTOR5_ABSCISSA,
-                      MOTOR6_ABSCISSA,
-                      MOTOR7_ABSCISSA);
+        usart1_printf("%f \r\n",
+                      DM4310_01.return_angle);
         osDelay(1);
     }
 }

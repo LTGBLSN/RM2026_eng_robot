@@ -11,6 +11,7 @@
 #include "CHASSIS_TASK.h"
 #include "GET_RC_TASK.h"
 #include "remote_control.h"
+#include "BOARD_COMMUNICATION_TASK.h"
 
 pid_type_def chassis_3508_id1_speed_pid;
 pid_type_def chassis_3508_id2_speed_pid;
@@ -97,8 +98,16 @@ void eng_all_4340_given_angle_get()
         }
         case 1:
         {
-            DM4310_01.give_angle = 0.0f ;
-            DM4310_02.give_angle = MOTOR2_ABSCISSA ;
+            if(follow_arm.clamp == 1)
+            {
+                DM4310_01.give_angle = CLAMP_CLOSE_ANGLE ;
+            }
+            else
+            {
+                DM4310_01.give_angle = CLAMP_OPEN_ANGLE ;
+            }
+
+            DM4310_02.give_angle = -MOTOR2_ABSCISSA ;
             DM4310_03.give_angle = -MOTOR3_ABSCISSA ;
             DM4310_04.give_angle = MOTOR4_ABSCISSA ;
             DM4340_05.give_angle = -MOTOR5_ABSCISSA ;
@@ -415,7 +424,7 @@ float chassis_4340_id1_speed_pid_loop(float chassis_4340_ID1_speed_set_loop)
 
 void chassis_4340_id1_angle_pid_init(void)
 {
-    static fp32 chassis_4340_id1_angle_kpkikd[3] = {CHASSIS_4340_ID1_ANGLE_PID_KP, CHASSIS_4340_ID1_ANGLE_PID_KI, CHASSIS_4340_ID1_ANGLE_PID_KD};
+    static fp32 chassis_4340_id1_angle_kpkikd[3] = {CHASSIS_4310_ID1_ANGLE_PID_KP, CHASSIS_4310_ID1_ANGLE_PID_KI, CHASSIS_4310_ID1_ANGLE_PID_KD};
     PID_init(&chassis_4340_id1_angle_pid, PID_POSITION, chassis_4340_id1_angle_kpkikd, CHASSIS_4310_ANGLE_PID_OUT_MAX, CHASSIS_4310_ANGLE_PID_KI_MAX);
 
 }
@@ -448,7 +457,7 @@ float chassis_4340_id2_speed_pid_loop(float chassis_4340_ID2_speed_set_loop)
 
 void chassis_4340_id2_angle_pid_init(void)
 {
-    static fp32 chassis_4340_id2_angle_kpkikd[3] = {CHASSIS_4340_ID2_ANGLE_PID_KP, CHASSIS_4340_ID2_ANGLE_PID_KI, CHASSIS_4340_ID2_ANGLE_PID_KD};
+    static fp32 chassis_4340_id2_angle_kpkikd[3] = {CHASSIS_4310_ID2_ANGLE_PID_KP, CHASSIS_4310_ID2_ANGLE_PID_KI, CHASSIS_4310_ID2_ANGLE_PID_KD};
     PID_init(&chassis_4340_id2_angle_pid, PID_POSITION, chassis_4340_id2_angle_kpkikd, CHASSIS_4310_ANGLE_PID_OUT_MAX, CHASSIS_4310_ANGLE_PID_KI_MAX);
 
 }
@@ -480,7 +489,7 @@ float chassis_4340_id3_speed_pid_loop(float chassis_4340_ID3_speed_set_loop)
 
 void chassis_4340_id3_angle_pid_init(void)
 {
-    static fp32 chassis_4340_id3_angle_kpkikd[3] = {CHASSIS_4340_ID3_ANGLE_PID_KP, CHASSIS_4340_ID3_ANGLE_PID_KI, CHASSIS_4340_ID3_ANGLE_PID_KD};
+    static fp32 chassis_4340_id3_angle_kpkikd[3] = {CHASSIS_4310_ID3_ANGLE_PID_KP, CHASSIS_4310_ID3_ANGLE_PID_KI, CHASSIS_4310_ID3_ANGLE_PID_KD};
     PID_init(&chassis_4340_id3_angle_pid, PID_POSITION, chassis_4340_id3_angle_kpkikd, CHASSIS_4310_ANGLE_PID_OUT_MAX, CHASSIS_4310_ANGLE_PID_KI_MAX);
 
 }
@@ -514,7 +523,7 @@ float chassis_4340_id4_speed_pid_loop(float chassis_4340_ID4_speed_set_loop)
 
 void chassis_4340_id4_angle_pid_init(void)
 {
-    static fp32 chassis_4340_id4_angle_kpkikd[3] = {CHASSIS_4340_ID4_ANGLE_PID_KP, CHASSIS_4340_ID4_ANGLE_PID_KI, CHASSIS_4340_ID4_ANGLE_PID_KD};
+    static fp32 chassis_4340_id4_angle_kpkikd[3] = {CHASSIS_4310_ID4_ANGLE_PID_KP, CHASSIS_4310_ID4_ANGLE_PID_KI, CHASSIS_4310_ID4_ANGLE_PID_KD};
     PID_init(&chassis_4340_id4_angle_pid, PID_POSITION, chassis_4340_id4_angle_kpkikd, CHASSIS_4310_ANGLE_PID_OUT_MAX, CHASSIS_4310_ANGLE_PID_KI_MAX);
 
 }

@@ -209,6 +209,10 @@ extern float yaw_imu_preprocess ;
 
 extern uint8_t uart1_receive_data ;//串口当前接收字节
 
+extern int16_t key ;
+
+
+
 /* USER CODE END EC */
 
 /* Exported macro ------------------------------------------------------------*/
@@ -238,6 +242,8 @@ void Error_Handler(void);
 #define INT1_GRYO_GPIO_Port GPIOC
 #define CS1_GYRO_Pin GPIO_PIN_0
 #define CS1_GYRO_GPIO_Port GPIOB
+#define KEY_Pin GPIO_PIN_14
+#define KEY_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

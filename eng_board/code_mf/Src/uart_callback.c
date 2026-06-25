@@ -40,15 +40,13 @@ void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef * huart, uint16_t Size)
         // 注意：H7开启了Cache时，可能需要在这里处理DCache的一致性 (SCB_InvalidateDCache_by_Addr)
 #endif
     }
+
+
     if(huart->Instance == UART7)
     {
-        // --- 遥控器包处理 ---
-        if (rx_VTM_buff[0] == 0xA9)
-        {
-            Process_VTM_Data(rx_VTM_buff, Size);
-        }
+
             // --- 自定义控制器/裁判系统处理 (以后扩展用) ---
-        else if (rx_VTM_buff[0] == 0xA5)
+        if (rx_VTM_buff[0] == 0xA5)
         {
 
             // 这里可以写另一个函数，如 Process_Referee_Data(rx_VTM_buff, Size);

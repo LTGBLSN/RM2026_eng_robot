@@ -27,9 +27,8 @@ void uart_sent_debug()
 {
     while (1)
     {
-        usart6_printf("%f,%d \r\n",
-                      SHOOT_3510_ID7_GIVEN_SPEED,
-                      motor_can1_data[6].speed_rpm);
+        usart6_printf("%d \r\n",
+                      key);
 
 
 
@@ -267,26 +266,24 @@ void aim_uart_sent()
 {
     while (1)
     {
-    	// 只有 6 个电机，依次填入 angle（这里修改传参值）
+        key = HAL_GPIO_ReadPin(KEY_GPIO_Port, KEY_Pin);
+
+    	// 依次填入 angle（这里修改传参值）
     	arm_data.motor0 = (int16_t)(motor_can1_data[1].ecd);
     	arm_data.motor1 = (int16_t)(motor_can1_data[2].ecd);
     	arm_data.motor2 = (int16_t)(motor_can1_data[3].ecd);
     	arm_data.motor3 = (int16_t)(motor_can1_data[4].ecd);
     	arm_data.motor4 = (int16_t)(motor_can1_data[5].ecd);
     	arm_data.motor5 = (int16_t)(motor_can1_data[6].ecd);
-
-    	// 剩余空位填入固定测试值或 0
-    	arm_data.clamp  = 0x1111;
+    	arm_data.clamp  = key;
     	arm_data.motor7 = 0x1111;
     	arm_data.motor8 = 0x1111;
     	arm_data.motor9 = 0x1111;
-
     	arm_data.stateA = 0x01;
     	arm_data.stateB = 0x00;
-
     	Send_Custom_Data(&arm_data);
 
-        osDelay(50);
+        osDelay(10);
     }
 }
 

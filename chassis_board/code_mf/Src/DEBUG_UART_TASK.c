@@ -16,9 +16,15 @@ void DEBUG_UART_TASK()
 {
     while (1)
     {
-        usart1_printf("%f,%f \r\n",
-                      DM4340_01.give_angle,
-                      DM4340_04.give_angle);
+        usart1_printf("%d,%d,%d,%d,%d,%d,%d,%d \r\n",
+                      follow_arm.motor0,
+                      follow_arm.motor1,
+                      follow_arm.motor2,
+                      follow_arm.motor3,
+                      follow_arm.motor4,
+                      follow_arm.motor5,
+                      follow_arm.clamp,
+                      time);
         osDelay(1);
     }
 }
